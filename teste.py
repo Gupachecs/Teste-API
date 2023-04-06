@@ -1,10 +1,12 @@
 from flask import Flask
+from flask import request
 
 app = Flask(__name__)
-
-@app.route("/")
+print(__name__)
+@app.route("/teste")
 def index():
-    return "<h1>Hello world</h1>"
+    x=request.args.get("parametro")
+    return "<h1>Hello world</h1> %s" % (x)
 
 
 app.run(host='0.0.0.0', port=81)
