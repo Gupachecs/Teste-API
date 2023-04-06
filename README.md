@@ -2,4 +2,4 @@
 
 Testando commit do Git
 
-teste RD
+python3 -m pip install flask
